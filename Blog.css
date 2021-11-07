@@ -1,0 +1,26 @@
+
+.FlexboxContainer {    
+    height: 1000px;
+    display: flex; 
+    flex-flow: row wrap;    
+    /*align-content: space-between; /*   /* waar de content komt te staan als wrap van toepassing is */  /*niet gebruikt omdat het de align-item effect teniet doet */ 
+    justify-content: space-evenly;  /*waar de content komt te staan t.o.v. de 'hoofd as' */   
+    align-items: flex-end;          /*waar de content komt te staan t.o.v. de 'kruisende as' */
+    
+}
+
+.blogpost { 
+    width: 300px; 
+    border: 1px solid black;
+    text-align: center;    
+ }
+ 
+ .FlexboxContainer div:nth-child(4) {
+     background-color: brown;
+    align-self: stretch;}
+
+.FlexboxContainer div:nth-child(3) {flex-grow: 0.75 ;}
+.FlexboxContainer div:nth-child(5) {flex-grow: 0.9 ;}
+
+
+
